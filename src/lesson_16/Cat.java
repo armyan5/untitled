@@ -16,7 +16,7 @@ public class Cat {
         this.name = name;
     }
 
-    public Cat((int age, String name, String color){
+    public Cat(int age, String name, String color){
         this.age = age;
         this.name = name;
         this.color = color;
