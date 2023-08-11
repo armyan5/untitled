@@ -24,7 +24,7 @@ public class Cat {
 
     public void setWeight(double weight) {
        if(weight <= 0 || weight >= 15) {
-           this.age = 2;
+           this.weight = 2;
        } else {
 
            this.weight = weight;
