@@ -23,13 +23,6 @@ public class HomeWork_19 {
         cat.setWeight(5);
         cat.setAge(2);
 
-        System.out.println("Imya: " + cat.getName());
-        System.out.println("Ves: " + cat.getWeight());
-        System.out.println("Voyrst: " + cat.getAge() );
-
-
-
-
         System.out.println("Ya kotik" + cat.getName());
         System.out.println("Moy ves " + cat.getWeight() + " kg");
         System.out.println("Mne " + cat.getAge() + " godika");
