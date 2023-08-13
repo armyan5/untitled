@@ -4,7 +4,22 @@ public class Dog {
 
    private String name;
    private int jumpHeight;
-    int maxJumpHeight;
+   private int maxJumpHeight;
+
+   public int getMaxJumpHeight() {
+
+       return maxJumpHeight;
+   }
+   public void setMaxJumpHeight ( int maxJumpHeight ) {
+       if (maxJumpHeight == jumpHeight * 2) {
+           maxJumpHeight = 2 * jumpHeight;
+       }
+       else {
+           maxJumpHeight = jumpHeight;
+       }
+   }
+
+
 
     public String getName() {
         return name;
@@ -20,7 +35,7 @@ public class Dog {
 
 
     public void setJumpHeight(int jumpHeight) {
-        if (jumpHeight < 150 || jumpHeight > 300){
+        if (jumpHeight <= 0 || jumpHeight > 300){
             jumpHeight = 150;
         }
         else {

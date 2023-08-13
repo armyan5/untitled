@@ -8,7 +8,7 @@ public class HomeWork_19Dog {
 
         System.out.println("=========== Rax =============");
 
-        Dog dog = new Dog("Rax", 150);
+        Dog dog = new Dog("Rax", 100);
 
         dog.whoAmI();
 
@@ -27,7 +27,7 @@ public class HomeWork_19Dog {
             dog.training();
         }
 
-        System.out.println("moy maqsimum prijok " + dog.maxJumpHeight);
+        System.out.println("moy maqsimum prijok " + dog.getMaxJumpHeight());
 
 
 
