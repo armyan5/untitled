@@ -3,9 +3,9 @@ package homework_22;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("===========Father=========");
+        System.out.println("===========Person=========");
 
-        Father father = new Father("Muller ", "Germany ", "Munchen");
+        Person father = new Person("Muller ", "Germany ", "Munchen");
         System.out.println(father);
 
         father.smoking();

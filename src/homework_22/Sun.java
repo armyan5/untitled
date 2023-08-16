@@ -1,6 +1,6 @@
 package homework_22;
 
-public class Sun extends Father{
+public class Sun extends Person {
     private String name;
     private int age;
 

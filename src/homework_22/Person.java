@@ -5,13 +5,13 @@ package homework_22;
 У всех классов должен быть метод создающий строку с информацией об объекте /метод toString/
  */
 
-public class Father {
+public class Person {
 
     private String lastName;
     private String nationality;
     private String location;
 
-    public Father(String lastName, String nationality,String location) {
+    public Person(String lastName, String nationality, String location) {
         this.lastName = lastName;
         this.nationality = nationality;
         this.location = location;
