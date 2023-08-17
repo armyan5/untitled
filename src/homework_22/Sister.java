@@ -1,15 +1,19 @@
 package homework_22;
 
-public class Daughter extends Person {
+public class Sister extends Person {
 
     private String name;
     private int age;
 
-    public Daughter(String lastName, String name, String nationality, String location, int age) {
+    public Sister(String lastName, String name, String nationality, String location, int age) {
         super(lastName, nationality, location);
         this.name = name;
         this.age = age;
 
+    }
+
+    public Sister(String lastName, String nationality, String location) {
+        super(lastName, nationality, location);
     }
 
     public String getName() {

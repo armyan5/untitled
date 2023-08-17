@@ -5,7 +5,7 @@ package homework_23;
  */
 
 import homework_22.Person;
-import lesson_23.CatTom;
+import homework_23.CatTom;
 
 public class Sister extends Person {
 

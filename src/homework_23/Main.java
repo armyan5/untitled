@@ -1,6 +1,6 @@
 package homework_23;
 
-import lesson_23.CatTom;
+import homework_23.CatTom;
 import lesson_23.DogAlpha;
 
 public class Main {
@@ -8,23 +8,12 @@ public class Main {
 
         System.out.println("===========Person=========");
 
-        Person father = new Person("Muller ", "Germany ", "Munchen");
-        System.out.println(father);
+        Person person = new Person("Muller ", "Germany ", "Munchen");
+        System.out.println(person);
 
-        father.smoking();
-        father.drink();
+        person.smoking();
+        person.drink();
 
-
-        System.out.println("===========Brother=========");
-
-        Brother brother = new Brother("Muller ", "Alex ", "Germany ", "Munchen ", 13);
-        System.out.println(brother);
-
-        System.out.println("menya zovut: " + brother.getName());
-        System.out.println("mne " + brother.getAge() + " let");
-
-        brother.school();
-        brother.box();
 
         System.out.println("===========Daughter=========");
 
@@ -41,6 +30,18 @@ public class Main {
         System.out.println(cat.tostring());
 
         sister.setCat(cat);
+
+
+        System.out.println("===========Brother=========");
+
+        Brother brother = new Brother("Muller ", "Alex ", "Germany ", "Munchen ", 13);
+        System.out.println(brother);
+
+        System.out.println("menya zovut: " + brother.getName());
+        System.out.println("mne " + brother.getAge() + " let");
+
+        brother.school();
+        brother.box();
 
         DogAlpha dog = new DogAlpha("Rex " , "Schaferhund" , 2);
         System.out.println(dog.tostring());

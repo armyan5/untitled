@@ -1,10 +1,10 @@
 package homework_22;
 
-public class Sun extends Person {
+public class Brother extends Person {
     private String name;
     private int age;
 
-    public Sun(String lastName, String name, String nationality, String location, int age ) {
+    public Brother(String lastName, String name, String nationality, String location, int age ) {
         super(lastName, nationality, location);
         this.name = name;
         this.age = age;

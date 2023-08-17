@@ -7,6 +7,7 @@ public class Arzt {
     int age;
 
     public Arzt(String name) {
+
         this.name = name;
     }
 

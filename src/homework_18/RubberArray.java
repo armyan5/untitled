@@ -24,6 +24,7 @@ public class RubberArray {
 
     public RubberArray(){                                             // Конструктор
         this.array = new int[0];
+
     }
 
     public RubberArray(int[] ints){                                   // Конструктор по массиву

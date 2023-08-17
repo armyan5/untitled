@@ -8,7 +8,7 @@ public class HomeWork_19Dog {
 
         System.out.println("=========== Rax =============");
 
-        Dog dog = new Dog("Rax", 100);
+        Dog dog = new Dog("Rax", 150);
 
         dog.whoAmI();
 

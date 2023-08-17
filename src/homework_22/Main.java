@@ -12,9 +12,9 @@ public class Main {
         father.drink();
 
 
-        System.out.println("===========Sun=========");
+        System.out.println("===========Brother=========");
 
-        Sun sun = new Sun("Muller ", "Alex ", "Germany ", "Munchen ", 13);
+        Brother sun = new Brother("Muller ", "Alex ", "Germany ", "Munchen ", 13);
         System.out.println(sun);
 
         System.out.println("menya zovut: " + sun.getName());
@@ -25,14 +25,14 @@ public class Main {
 
         System.out.println("===========Daughter=========");
 
-        Daughter daughter = new Daughter("Muller ","Andrea ", "Germany","Munchen ", 11);
-        System.out.println(daughter);
+        Sister sister= new Sister("Muller ","Andrea ", "Germany","Munchen ", 11);
+        System.out.println(sister);
 
-        System.out.println("menya zovut: " + daughter.getName());
-        System.out.println("mne " + daughter.getAge() + " let");
+        System.out.println("menya zovut: " + sister.getName());
+        System.out.println("mne " + sister.getAge() + " let");
 
-        daughter.school();
-        daughter.dance();
+        sister.school();
+        sister.dance();
 
 
 
