@@ -1,8 +1,5 @@
 package homework_23;
 
-import homework_23.CatTom;
-import lesson_23.DogAlpha;
-
 public class Main {
     public static void main(String[] args) {
 

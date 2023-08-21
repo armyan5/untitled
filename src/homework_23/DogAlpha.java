@@ -1,4 +1,4 @@
-package lesson_23;
+package homework_23;
 
 public class DogAlpha {
 

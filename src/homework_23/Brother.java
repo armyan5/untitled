@@ -1,7 +1,5 @@
 package homework_23;
 
-import lesson_23.DogAlpha;
-
 public class Brother extends Person {
     private String name;
     private int age;
