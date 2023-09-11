@@ -17,6 +17,7 @@ public class Homework_01_0 {
             case 1: {
                 System.out.println("пользователь ввёл: число 1" );
                 break;
+
             }
             case 2: {
                 System.out.println("пользователь ввёл: число 2");

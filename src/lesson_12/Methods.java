@@ -76,7 +76,7 @@ public class Methods {
             for (int value : arr) {
                 if (value < min) {
                     min = value;
-                    // for (int i = o; i < arr.length; i ++);{
+                    // for (int i = 0; i < arr.length; i ++);{
                     // if (arr[i] < min) {
                     // min = arr[i];
                     //min Index = i;

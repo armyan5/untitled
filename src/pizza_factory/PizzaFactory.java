@@ -28,6 +28,8 @@ public class PizzaFactory {
                 }
 
                 case 2: {
+
+
                     System.out.println("you ordered pizza Salami");
                     salami.orderPizza();
                     break;
@@ -43,8 +45,8 @@ public class PizzaFactory {
 
             }
 
-        System.out.println("we wish you a good day and bon appetit !!");
 
+        System.out.println("we wish you a good day and bon appetit !!");
     }
 
 

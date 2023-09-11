@@ -7,13 +7,18 @@ public boolean strEndsWithAnotherStr ( String str1, str2)
 
 public class HomeWork_25 {
 
+    public static void main(String[] args) {
+
+    }
+
     public boolean strEndsWithAnotherStr(String str1, String str2) {
+
+
         if (str1.endsWith(str2)) {
             return true;
         } else {
             return false;
         }
-
     }
 
     /*
@@ -22,6 +27,7 @@ public class HomeWork_25 {
      */
 
     public char[] createsCharArray(String str){
+
         char[] charArray = new char[str.length()];
         for (int i = 0; i < charArray.length; i++) {
             charArray[i] = str.charAt(i);
