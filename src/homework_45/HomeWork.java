@@ -1,6 +1,4 @@
 package homework_45;
-
-import java.awt.*;
 import java.util.*;
 import java.util.List;
 
