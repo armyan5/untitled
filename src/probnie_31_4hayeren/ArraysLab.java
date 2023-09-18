@@ -1,6 +1,4 @@
-package probnie_31_4;
-
-import java.util.Arrays;
+package probnie_31_4hayeren;
 
 public class ArraysLab {
     public static void main(String[] args) {

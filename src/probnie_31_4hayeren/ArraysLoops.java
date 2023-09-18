@@ -1,7 +1,4 @@
-package probnie_31_4;
-
-import java.lang.module.FindException;
-import java.util.Arrays;
+package probnie_31_4hayeren;
 
 public class ArraysLoops {
     public static void main(String[] args) {
