@@ -22,7 +22,6 @@ public class Main {
         }
         System.out.println("====================");
 
-
         try {
             String s = null;
             String m = s.toLowerCase();
@@ -31,11 +30,11 @@ public class Main {
             System.out.println(e.getMessage());
         }
         System.out.println("====================");
+
         try {
             int[] m = new int[2];
-            m[8]=5;
-        }
-        catch (ArrayIndexOutOfBoundsException e) {
+            m[8] = 5;
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println(e.getMessage());
         }
 
