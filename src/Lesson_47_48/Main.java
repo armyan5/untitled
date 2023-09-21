@@ -1,6 +1,4 @@
-package Lesson_47;
-
-import java.util.Scanner;
+package Lesson_47_48;
 
 public class Main {
     public static void main(String[] args) {
@@ -110,7 +108,6 @@ public class Main {
         /*
              блок finally
 
-
              try{
                блок кода
                }
@@ -118,8 +115,7 @@ public class Main {
              обработка  исключения
              }
              finally {
-              код, который должен выполниться в любом случае}
-
+              код, который должен выполниться в любом случае
 
              */
         System.out.println("----------finally------------------");
@@ -134,6 +130,84 @@ public class Main {
 
         System.out.println("we are out of the try-catch-finally");
 
+
+        /*
+        1. finally ne sushestvuyet bez bloka try
+        2. finally ne evlyayetsa obezatelnim blokom
+        3. esli isklyuchenie ne proisxodyat to finally vipolnyayetsa sled za blokom try, esli proisxodyat to
+        za blokom catch
+        4.kod v finally vipolnyayetsa daje esli v bloke try soderjatsa komandi takie kak return,break,continue
+        5.v bloke try - finally mogut sushestvovat bez bloka catch
+         */
+
+        System.out.println(example());
+        for (int i = 0; i < 3; i++) {
+          //  example1(i);
+            System.out.println();
+        }
+
+        checkCandidates(22,10);
+
+    }
+
+    public static int example() {
+        try {
+            return 1;
+        } finally {
+            System.out.println("Finally runs even when return is present");
+        }
+    }
+
+    public static void example1(int num) {
+        int t;
+        int[] ints = new int[2];
+
+        System.out.println("received " + num);
+        try {
+
+
+            switch (num) {
+                case 0:
+                    t = 20 / num; // delenya na 0
+                    break;
+
+                case 1:
+                    ints[10] = 100; // nepravilniy index
+                    break;
+
+                case 2:
+                    return; // vozvrat iz bloka try
+
+
+            }
+
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Do not divide by zero!");
+            return;
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("No such index is found");
+        }
+        finally {
+            System.out.println("Finally always executes");
+        }
+    }
+
+    /*
+    throw - brosat isklyuchenie
+    throw new exception_class(" message")
+     */
+
+    public static void checkCandidates(int age,int weight) {
+
+        if (age < 10 && weight < 40) {
+            throw new ArithmeticException("Sorry, you are not good for our section");
+        }
+        else {
+            System.out.println("Welcome aboard!");
+        }
     }
 }
+
 
