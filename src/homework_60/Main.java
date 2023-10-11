@@ -33,7 +33,7 @@ public class Main {
 
         Person person1 = new Person("Jack", 13, address1);
         Person person2 = new Person("John", 33, address2);
-        Person person3 = new Person("Patric", 10, address3);
+        Person person3 = new Person("Patric", 16, address3);
         Person person4 = new Person("Filip", 25, address4);
         Person person5 = new Person("Make", 50, address5);
 
@@ -48,12 +48,17 @@ public class Main {
         names.add("Ann");
         names.add("Ann");
         names.add("John");
+        names.add("John");
 
         System.out.println(nameList(names));
 
 
         //Task3
         System.out.println(mapList(list));
+
+
+        //Task3 2oy sposob
+    //    System.out.println(groupByAge(list));
 
     }
 
@@ -62,7 +67,7 @@ public class Main {
     public static List<Address> addressList(List<Person> persons) {
         return persons.stream()
                 .filter(p -> p.getAge() > 17)
-                .map(Person::getAddress)
+                .map(Person::getAddress) // vozvrashaet list tex kotorie starshe 17 let
                 .collect(Collectors.toList());
     }
 
@@ -70,7 +75,7 @@ public class Main {
     //Task2
     public static List<String> nameList(List<String> names) {
         return names.stream()
-                .distinct()
+                .distinct()  // vozvrashayet tolko te elementi kotorie ne povtaryayutsa
                 .collect(Collectors.toList());
     }
 
@@ -78,9 +83,15 @@ public class Main {
     //Task3
     public static Map<Integer, String> mapList(List<Person> personList) {
         return personList.stream()
-                .collect(Collectors.toMap(Person::getAge, Person::getName));
+                .collect(Collectors.toMap(Person::getAge, Person::getName)); // vozvrashayet Map s key i znachenya
 
 
+    }
+
+    //Task3 2 oy sposob
+    public static Map<Integer,List<Person>> groupByAge(List<Person> personList){
+        return personList.stream()
+                .collect(Collectors.groupingBy(Person::getAge));
     }
 
 

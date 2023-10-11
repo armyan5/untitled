@@ -17,7 +17,7 @@ public class Main {
         Arrays.stream(strings).map(str -> str.split(""))
                 .flatMap(Arrays::stream).forEach(System.out::print);
 
-        // distinct() - vozvrashaet tolko unikalnie elementi
+        // distinct() - vozvrashaet tolko unikalnie elementi   , tolko te kotorie ne povtaryayutsa
 
         Stream.of("one", "two", "three", "one", "two")
                 .distinct()
