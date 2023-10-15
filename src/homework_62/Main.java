@@ -27,6 +27,7 @@ task 10:Написать метод, принимающий лист из нес
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.List;
 
@@ -86,6 +87,7 @@ public class Main {
 
         long amountOfDays = amountOfDays(localDateList);
         System.out.println(amountOfDays);
+      
 
 
     }
@@ -105,6 +107,8 @@ public class Main {
         long numberOfDays = latestDate.toEpochDay() - earliestDate.toEpochDay();
 
         return numberOfDays;
+
+
     }
 
 
