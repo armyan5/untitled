@@ -9,8 +9,6 @@ older than 17 (В этом списке Джон и Питер и Анн ста�
 обе задачи должны быть решены с использованием стримов !
  */
 
-import homework_63_1.Person;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
