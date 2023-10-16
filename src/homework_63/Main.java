@@ -16,21 +16,30 @@ public class Main {
         BankAccount bankAccount = new BankAccount("DE123456789");
         BankAccount bankAccount1 = new BankAccount("DE987654321");
         BankAccount bankAccount2 = new BankAccount("DE456789123");
+        BankAccount bankAccount3 = new BankAccount("DE886789123");
+        BankAccount bankAccount4 = new BankAccount("DE996789123");
 
-        List<BankAccount> bankAccounts = Arrays.asList(bankAccount, bankAccount1, bankAccount2);
-        Person person = new Person("John",bankAccounts);
+        List<BankAccount> bankAccounts = Arrays.asList(bankAccount, bankAccount1);
+        List<BankAccount> bankAccounts1 = Arrays.asList(bankAccount2, bankAccount3);
+        List<BankAccount> bankAccounts2 = Arrays.asList(bankAccount4);
 
+        Person personA = new Person("A", bankAccounts);
+        Person personB = new Person("B", bankAccounts1);
+        Person personC = new Person("C", bankAccounts2);
 
-
+        List<Person> personList = Arrays.asList(personA, personB, personC);
+        stringReplace("IBANs with stars");
+        System.out.println(returnListIBANs(personList));
 
 
     }
 
-    public static List<String> returnListIBANs(List<BankAccount> accounts,Person person) {
-        return accounts.stream()
-                .map(a -> stringReplace(a.getIBAN()))
+    public static List<String> returnListIBANs(List<Person> persons) {
+        return persons.stream()
+                .flatMap(ba -> ba.getBankAccounts().stream())
+                .map(BankAccount::getIBAN)
+                .map(Main::stringReplace)
                 .collect(Collectors.toList());
-
     }
 
     public static String stringReplace(String str) {

@@ -36,10 +36,10 @@ public class Main {
     }
 
     public static String getNamesString(List<Person> persons) {
-        return "In this list " + persons.stream()
+        return  persons.stream()
                 .filter(person -> person.getAge() > 17)
                 .map(Person::getName)
-                .collect(Collectors.joining(" and ")) + " are older than 17";
+                .collect(Collectors.joining(" and ","In this list "," are older than 17"));
     }
 }
 
