@@ -1,0 +1,15 @@
+package lesson_66.synchronization;
+
+public class Main {
+    // Synchronization potokov
+
+    public static void main(String[] args) {
+        CounterCommon counterCommon = new CounterCommon();
+
+        for (int i = 0; i < 5; i++) {
+            Thread thread = new Thread(new ThreadCount(counterCommon),"Child " + i);
+            thread.start();
+
+        }
+    }
+}
